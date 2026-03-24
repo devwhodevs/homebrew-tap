@@ -1,8 +1,8 @@
 class Engraph < Formula
   desc "Local semantic search for Obsidian vaults"
   homepage "https://github.com/devwhodevs/engraph"
-  url "https://github.com/devwhodevs/engraph/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "0ae279c2db4382e7a4c24c86c9e0be5a85b0d868e6c38ae8844866558dd82291"
+  url "https://github.com/devwhodevs/engraph/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "5c32f4737a620b798b3f571f0101767cb4df7d12bbc47300731854df390ef466"
   license "MIT"
 
   depends_on "rust" => :build
