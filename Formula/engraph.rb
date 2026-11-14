@@ -7,8 +7,11 @@ class Engraph < Formula
 
   depends_on "cmake" => :build
   depends_on "rust" => :build
+  depends_on "openssl@3" => :build
 
   def install
+    # llama.cpp vendored cpp-httplib does not compile against OpenSSL 4 (const X509_NAME).
+    ENV["OPENSSL_ROOT_DIR"] = Formula["openssl@3"].opt_prefix
     system "cargo", "install", *std_cargo_args
   end
 
